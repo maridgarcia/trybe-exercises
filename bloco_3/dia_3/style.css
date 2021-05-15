@@ -6,7 +6,7 @@ ol li:hover {
     background-color: cornflowerblue;
 }
 
-li:active {
+ol li:active {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
