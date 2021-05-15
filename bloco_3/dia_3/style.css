@@ -3,18 +3,29 @@ div:hover {
 }
 
 div:nth-of-type(1) {
-    color: red
+    color: red;
+    font-size: 12px;
+    
 }
 
 div:nth-of-type(2) {
     color: green;
+    font-size: 14px;
+    
 }
 div:nth-of-type(3) {
-    color:purple
+    color:purple;
+    font-size: 16px;
+    width: 800px
+    
+    
 }
 div:nth-of-type(4) {
     color: brown;
+    font-size: 18px;
 }
 div:nth-of-type(5) {
-    color: orange;
+    color: orangered;
+    font-size: 20px;
 }
+
