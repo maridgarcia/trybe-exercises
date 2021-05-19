@@ -103,3 +103,24 @@ switch(chessPiece.toLowerCase()) {
     default:
         console.log('Erro: peça inválida');
 }
+
+let porcentagem = 40;
+
+if (porcentagem < 0 || porcentagem > 100) {
+    console.log('Erro: valor inválido');
+} else if (porcentagem >=90) {
+  console.log('Sua nota é A');
+}
+else if (porcentagem >= 80) {
+  console.log('Sua nota é B');
+}
+else if (porcentagem >= 70) {
+  console.log('Sua nota é C');
+}
+
+else if (porcentagem >= 60) {
+  console.log('Sua nota é D');
+}
+else {
+  console.log('Sua nota é F');
+}
