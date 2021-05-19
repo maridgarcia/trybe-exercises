@@ -55,7 +55,7 @@ else {
 //5 Faça um programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
 
 let num1 = 100;
-let num2 = -2;
+let num2 = 2;
 let num3 = 30;
 
 let somaDosAngulos = num1 + num2 +num3;
@@ -71,3 +71,35 @@ if (todosOsAngulos) {
 }else {
         console.log('ângulo inválido');
     }
+
+//6 Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+
+let chessPiece = 'Peão';
+
+switch(chessPiece.toLowerCase()) {
+    case 'rei':
+    console.log('Rei: anda uma casa em todas em direções');
+    break;
+
+    case 'rainha':
+    console.log('Rainha: anda quantas casas quiser, em todas em direções');
+    break;
+
+    case 'torre':
+    console.log('Torre: anda em linha reta, quantas casas quiser, na horizontal e vertical');
+    break;
+
+    case 'bispo':
+    console.log('Bispo: anda na diagonal');
+    break;
+
+    case 'cavalo':
+    console.log('Cavalo: movimenta-se em L');
+    break;
+
+    case 'peão':
+    console.log('Peão: anda apenas uma casa pra frente');
+    break;
+    default:
+        console.log('Erro: peça inválida');
+}
