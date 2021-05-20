@@ -137,3 +137,16 @@ if (number1 % 2 == 0 || number2 % 2 == 0 || number3 == 0) {
 else {
   console.log(false);
 }
+
+//9 Escreva um programa que defina três números em variáveis e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
+
+let x = 8;
+let y = 4;
+let z = 10;
+
+let isOdd = true;
+
+if(x % 2 === 0 || y % 2 === 0 || z % 2 === 0) {
+  isOdd = false;
+}
+console.log(isOdd);
