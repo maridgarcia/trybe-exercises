@@ -26,7 +26,7 @@ for (let index = 0; index <numbers.length; index+=1) {
    let mediaAritmetica = sum / numbers.length;
    console.log(mediaAritmetica);
 
-   //4 Com o mesmo código do exercício anterior, caso o valor final seja maior que 20, imprima a mensagem: "valor maior que 20". Caso não seja, imprima a mensagem: "valor menor ou igual a 20";
+//4 Com o mesmo código do exercício anterior, caso o valor final seja maior que 20, imprima a mensagem: "valor maior que 20". Caso não seja, imprima a mensagem: "valor menor ou igual a 20";
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let sum = 0;
@@ -36,11 +36,22 @@ for (let index = 0; index <numbers.length; index+=1) {
    }
    
    let mediaAritmetica = sum / numbers.length;
-   
+
    if (mediaAritmetica > 20) {
        console.log('valor maior que 20');
    }
    else {
        console.log('valor menor que 20');
    }
+
+//Utilizando for , descubra qual o maior valor contido no array e imprima-o;
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let maiorNumero = [0]
+
+for (index = 0; index < numbers.length; index+=1) {
+    if (numbers[index] > maiorNumero ) {
+        maiorNumero = numbers[index];
+    }
+}
+console.log(maiorNumero);
    
