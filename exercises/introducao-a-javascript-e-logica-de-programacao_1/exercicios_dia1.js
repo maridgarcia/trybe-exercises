@@ -28,15 +28,15 @@ let a = 4;
 let b = 12;
 let c = 10;
 
-// if (a > b && a > c) {
-//     console.log('a é o maior número');
-// }
-// else if (b > a && b > c) {
-//   console.log('b é o maior número');
-// }
-// else {
-//     console.log('c é o maior número');
-// }
+if (a > b && a > c) {
+    console.log('a é o maior número');
+}
+else if (b > a && b > c) {
+  console.log('b é o maior número');
+}
+else {
+    console.log('c é o maior número');
+}
 
 //4 Faça um programa que, dado um valor definido numa variável, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
 
@@ -166,7 +166,48 @@ else {
   console.log("Erro: valor inválido");
 }
 
+//11 Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
 
+let salario = 3000;
+let aliquota;
+let impostoRenda;
 
+if (salario <= 1556.94) {
+  let aliquota = salario * 0.08;
+  let salarioLiquido = salario - aliquota;
+  console.log(salarioLiquido);
+}
+else if (salario >= 1556.95 && salario <= 2594.92) {
+  let aliquota = salario * 0.09;
+  let salarioLiquido = salario - aliquota;
+  console.log(salarioLiquido);
+}
+else if (salario >= 2594.93 && salario <= 5189.82) {
+  let aliquota = salario * 0.11;
+  let salarioLiquido = salario - aliquota;
+  console.log(salarioLiquido)
+}
+else {
+  let aliquota = 570.88;
+  console.log(salario - aliquota);
+}
 
+let salarioLiquido = salario - aliquota;
 
+if(salarioLiquido < 1903.98) {
+  let impostoRenda = 0;
+}
+else if (salarioLiquido <= 2826.65) {
+ let impostoRenda = (salarioLiquido * 0.075) - 142.80;
+}
+else if (salarioLiquido <= 3751.05) {
+  let impostoRenda = (salarioLiquido * 0.15) - 354.80;
+}
+else if (salarioLiquido <= 4664.68) {
+  let impostoRenda = (salarioLiquido * 0.225) - 636.13;
+}
+else {
+  let impostoRenda = (salarioLiquido * 0.275) - 869.36;
+}
+
+console.log(salarioLiquido - impostoRenda);
