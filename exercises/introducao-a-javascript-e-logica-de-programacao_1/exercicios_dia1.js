@@ -124,3 +124,16 @@ else if (porcentagem >= 60) {
 else {
   console.log('Sua nota é F');
 }
+
+//8 Escreva um programa que defina três números em variáveis e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .
+
+let number1 = 1;
+let number2 = 5;
+let number3 = 3;
+
+if (number1 % 2 == 0 || number2 % 2 == 0 || number3 == 0) {
+  console.log(true);
+}
+else {
+  console.log(false);
+}
