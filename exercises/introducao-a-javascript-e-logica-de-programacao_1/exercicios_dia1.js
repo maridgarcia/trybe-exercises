@@ -150,3 +150,23 @@ if(x % 2 === 0 || y % 2 === 0 || z % 2 === 0) {
   isOdd = false;
 }
 console.log(isOdd);
+
+//10 Escreva um programa que se inicie com dois valores em duas variáveis diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+
+let custoProduto = 8;
+let valorVenda = 20;
+
+
+if (custoProduto >= 0 && valorVenda >= 0) {
+  let custoProdutoTotal= custoProduto * 1.2;
+  let lucro = (valorVenda - custoProdutoTotal) * 1000;
+  console.log(lucro);
+}
+else {
+  console.log("Erro: valor inválido");
+}
+
+
+
+
+
