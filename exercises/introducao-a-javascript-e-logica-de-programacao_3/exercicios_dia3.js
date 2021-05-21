@@ -20,17 +20,12 @@ let asteriscos = '*';
 
 for (let index = 0; index < n; index += 1) {
     for (let index2 = 0; index2 < index + 1; index2 += 1) {
-      linha = linha + asteriscos;
-             
+      linha = linha + asteriscos;             
   }
   console.log(linha);
-  linha = '';
-  
+  linha = '';  
 }
-
-
 
 //3 Agora inverta o lado do triângulo.
 
 //4 Depois, faça uma pirâmide com n asteriscos de base.
-
