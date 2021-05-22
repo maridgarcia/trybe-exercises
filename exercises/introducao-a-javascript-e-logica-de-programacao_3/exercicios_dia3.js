@@ -27,5 +27,45 @@ for (let index = 0; index < n; index += 1) {
 }
 
 //3 Agora inverta o lado do triângulo.
+let n = 5;
+let linha = '';
+let asteriscos = '*';
+let base = n;
+
+for (let indexLinha = 0; indexLinha < n; indexLinha += 1) {
+  for (let indexColuna = 0; indexColuna <= n; indexColuna += 1) {
+    if (indexColuna < base) {
+        linha = linha + ' ';
+    }
+    else {
+    linha = linha + asteriscos;
+    }
+  }
+  console.log(linha);
+  linha = '';
+  base -= 1;
+}
 
 //4 Depois, faça uma pirâmide com n asteriscos de base.
+
+let n = 5;
+let asterisco = '*';
+let linha = ' ';
+let posicao = n;
+
+// console.log('','','','', '*');
+// console.log('','','','***');
+// console.log('','','*****');
+
+for (indexBase = 0; indexBase < n; indexBase += 1) {
+    for (indexLinha = 0; indexLinha <= indexBase; indexLinha += 1) {
+        if(indexBase < posicao) {
+            linha = linha + asterisco;
+        }
+        else {
+            linha = linha + '';
+        }
+    }
+    console.log(linha);
+    posicao -= 1;
+}
