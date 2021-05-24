@@ -47,25 +47,19 @@ for (let indexLinha = 0; indexLinha < n; indexLinha += 1) {
 }
 
 //4 Depois, faça uma pirâmide com n asteriscos de base.
-
 let n = 5;
 let asterisco = '*';
-let linha = ' ';
-let posicao = n;
+let linha = '';
 
-// console.log('','','','', '*');
-// console.log('','','','***');
-// console.log('','','*****');
+let base = (n + 1) / 2;
 
-for (indexBase = 0; indexBase < n; indexBase += 1) {
-    for (indexLinha = 0; indexLinha <= indexBase; indexLinha += 1) {
-        if(indexBase < posicao) {
-            linha = linha + asterisco;
-        }
-        else {
-            linha = linha + '';
-        }
-    }
+
+for (let index = 0; index < n; index += 1) {
+    linha = base + asterisco;
     console.log(linha);
-    posicao -= 1;
 }
+
+//   *
+//  ***
+// *****
+
