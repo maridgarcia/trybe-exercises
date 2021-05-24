@@ -12,8 +12,14 @@ function verificaPalindrome(palindromo) {
 }
 console.log(verificaPalindrome('arara'));
 
-// Escolho uma palavra;
-// Verifico se a palavra tem o mesmo significado de trás pra frente;
-// Se sim, é uma palíndromo. Se não, não é palíndromo.
-
 //2. Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+
+function biggerNumber(array) {
+    for (let i = 0; i < array.lenght; i += 1) {
+               
+    }
+    console.log(biggerNumber[i])
+}
+console.log(biggerNumber[i])
+
+biggerNumber([2, 3, 6, 7, 10, 1]);
