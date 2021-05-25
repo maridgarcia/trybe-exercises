@@ -14,12 +14,15 @@ console.log(verificaPalindrome('arara'));
 
 //2. Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
 
-function biggerNumber(array) {
-    for (let i = 0; i < array.lenght; i += 1) {
-               
-    }
-    console.log(biggerNumber[i])
+function largestNumber(number) {
+  let biggerNumber = 0;
+  for (let index in number) {
+    if (number[biggerNumber] < number[index]) {
+      biggerNumber = index;
+  }
+  }
+  return biggerNumber;
 }
-console.log(biggerNumber[i])
 
-biggerNumber([2, 3, 6, 7, 10, 1]);
+
+console.log(largestNumber([2, 4, 6, 7, 10, 0, -3]));
