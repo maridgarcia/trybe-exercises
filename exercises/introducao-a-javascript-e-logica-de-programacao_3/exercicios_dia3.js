@@ -44,22 +44,4 @@ for (let indexLinha = 0; indexLinha < n; indexLinha += 1) {
   console.log(linha);
   linha = '';
   base -= 1;
-}
-
-//4 Depois, faça uma pirâmide com n asteriscos de base.
-let n = 5;
-let asterisco = '*';
-let linha = '';
-
-let base = (n + 1) / 2;
-
-
-for (let index = 0; index < n; index += 1) {
-    linha = base + asterisco;
-    console.log(linha);
-}
-
-//   *
-//  ***
-// *****
 
