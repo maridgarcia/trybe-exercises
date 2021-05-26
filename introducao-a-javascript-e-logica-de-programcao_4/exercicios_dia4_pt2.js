@@ -18,7 +18,7 @@ function largestNumber(number) {
   let biggerNumber = 0;
   for (let index in number) {
     if (number[biggerNumber] < number[index]) {
-      biggerNumber = index;
+      biggerNumber = number[index];
   }
   }
   return biggerNumber;
@@ -56,14 +56,8 @@ function maiorNome (names) {
 
 console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
-function maiorPalavra(palavras) {
-  let maiorPalavra = palavras[0];
-  for (let indice in palavras) {
-    if (maiorPalavra.length < palavras[indice].length) {
-      maiorPalavra = palavras[indice];
-    }
-  }
-  return maiorPalavra;
-}
+//5. Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
 
-console.log(maiorPalavra(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+function numeros () {
+
+}
