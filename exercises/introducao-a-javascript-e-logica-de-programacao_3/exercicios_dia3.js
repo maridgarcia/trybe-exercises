@@ -44,4 +44,4 @@ for (let indexLinha = 0; indexLinha < n; indexLinha += 1) {
   console.log(linha);
   linha = '';
   base -= 1;
-}
+
