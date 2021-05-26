@@ -64,7 +64,20 @@
             nameTag.innerHTML = 'Exercício 5.1 - JavaScript';
           }
           correctNameTag();
-
+//Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+          function upperCase () {
+            let upper = document.getElementsByTagName('p')[0];
+            upper.innerHTML = upper.innerHTML.toUpperCase();
+          }
+          upperCase();
+//Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+          function showParagraphs() {
+          let paragraphs = document.getElementsByTagName('p');
+            for (i = 0; i < paragraphs.length; i += 1) {
+              console.log(paragraphs[i].innerHTML)
+            }
+          }
+          showParagraphs();
 
     </script>
   </body>
