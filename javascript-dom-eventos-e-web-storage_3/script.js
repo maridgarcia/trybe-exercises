@@ -111,23 +111,22 @@ function clickFriday (fridayDays){
 let dezFridays = [4, 11, 18, 25];
 clickFriday(dezFridays);
 
+//Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
 
+function zoomIn() {
+  let getDays = document.querySelector('#days');
+  getDays.addEventListener('mouseover', function (event){
+    event.target.style.fontSize = '30px';
+  })
+}
 
-// function displayFridays(fridaysArray) {
-//   let getFridayButton = document.querySelector('#btn-friday');
-//   let fridays = document.getElementsByClassName('friday-day');
-//   let newFridayText = 'SEXTOU o/';
+function zoomOut(){
+  let getDays = document.querySelector('#days');
+  getDays.addEventListener('mouseout', function (event){
+    event.target.style.fontSize = '20px';
+  })
 
-//   getFridayButton.addEventListener('click', function() {
-//   for (let index = 0; index < fridays.length; index += 1) {
-//     if (fridays[index].innerHTML !== newFridayText) {
-//         fridays[index].innerHTML = newFridayText;
-//     } else {
-//         fridays[index].innerHTML = fridaysArray[index];
-//       }
-//     }
-//   })
-// };
+}
 
-// let dezFridays = [ 4, 11, 18, 25 ];
-// displayFridays(dezFridays);
+zoomIn(event);
+zoomOut(event);
