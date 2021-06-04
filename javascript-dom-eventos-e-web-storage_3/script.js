@@ -117,7 +117,6 @@ function zoomOut(){
 zoomIn(event);
 zoomOut(event);
 
-// Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
 function createTasks(taskName) {
   let myTasks = document.querySelector('.my-tasks');
   let span = document.createElement('span');
@@ -128,4 +127,16 @@ function createTasks(taskName) {
 }
 
 createTasks('Cozinhar')
+
+function subtitle(color) {
+  let myTasks = document.querySelector('.my-tasks');
+  let divTasks = document.createElement('div');
+  divTasks.className = 'task';
+  divTasks.style.backgroundColor = color;
+  myTasks.appendChild(divTasks);
+}
+
+subtitle('darkgreen');
+
+// O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
