@@ -18,10 +18,6 @@ createDaysOfTheWeek();
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 const getCalendar = document.querySelector('#days');
 
-//   Exercício 1:
-//1.1 O array dezDaysList contém os dois últimos dias de novembro e os dias do mês de dezembro. Desenvolva uma função que crie dinamicamente cada dia do calendário e os adicione como filhos/filhas da tag <ul> com ID "days" . Note que os dias 29 e 30 de novembro estão no array pois representam respectivamente Domingo e Segunda-feira.
-
-//a. Pegar os dias da array dezDaysList;
 function fillCalendar() {
 for (let index = 0; index < dezDaysList.length; index += 1) {
   let keepDays = dezDaysList[index];
@@ -48,15 +44,11 @@ for (let index = 0; index < dezDaysList.length; index += 1) {
 
 fillCalendar();
 
-// Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome Feriados".
-
 let feriado = document.createElement('button');
 feriado.id = 'btn-holiday';
 feriado.innerHTML = 'Feriado';
 let btnContainer = document.querySelector('.buttons-container');
 btnContainer.appendChild(feriado);
-
-// Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
 
 function showHolidays() {
 let btnHoliday = document.querySelector('#btn-holiday');
@@ -78,10 +70,6 @@ for (let index = 0; index < holiday.length; index += 1) {
 }
 
 showHolidays();
-
-// Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira". *
-// Adicione a este botão o ID "btn-friday" . *
-// Adicione este botão como filho/filha da tag <div> com classe "buttons-container" . *
 
 function friday(string) {
   let fridayBtn = document.createElement('button');
@@ -111,8 +99,6 @@ function clickFriday (fridayDays){
 let dezFridays = [4, 11, 18, 25];
 clickFriday(dezFridays);
 
-//Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
-
 function zoomIn() {
   let getDays = document.querySelector('#days');
   getDays.addEventListener('mouseover', function (event){
@@ -130,3 +116,16 @@ function zoomOut(){
 
 zoomIn(event);
 zoomOut(event);
+
+// Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+function createTasks(taskName) {
+  let myTasks = document.querySelector('.my-tasks');
+  let span = document.createElement('span');
+  
+  span.innerHTML = taskName;
+  myTasks.appendChild(span);
+    
+}
+
+createTasks('Cozinhar')
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
