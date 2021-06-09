@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Currículo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -10,7 +11,7 @@
         <h1>Cadastre seu Currículo</h1>
     </header>
     <form action="">
-  <fieldset>
+  <fieldset class = "style-fieldset">
   <legend>Informações Pessoais</legend>
     <label for="">Nome
         <input type="text" maxlength="40" required>
@@ -43,16 +44,28 @@
         </select>
     <br>
     <br>
-    <label for="moradia">Moradia
-        <input type="radio" id='moradia'>Casa
-        <input type="radio" id='moradia'>Apartamento
+    <label for="tipo-de-moradia">Moradia
+        <input type="radio" id='moradia' name = 'tipo-de-moradia' required>Casa
+        <input type="radio" id='moradia' name = 'tipo-de-moradia' required>Apartamento
     </label>
   </fieldset>
 
-  <fieldset>
+  <fieldset class = "style-fieldset">
       <legend>Resumo do Currículo</legend>
       <p> <em>Escreva um resumo da sua carreira profissional:</em></p>
       <textarea name="resumo-curriculo" id="resumo-curriculo" cols="30" rows="5" maxlength="1000" required></textarea>
+      <br>
+      <label for=""> Cargo
+          <input type="text" maxlength="40" required>
+      </label>
+      <br>
+      <label for="">Descrição do cargo:
+          <input type="text" maxlength="500" required>
+      </label>
+      <br>
+      <label for="">Data de início:
+          <input type="date" name="" id="">
+      </label>
   </fieldset>
 </form>
     <script src="script.js"></script>
