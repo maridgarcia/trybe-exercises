@@ -17,10 +17,12 @@
   .logo-container {
     display: flex;
     justify-content: center;
+    flex-basis: 268px;
   }
   
   .menu-container {
     display: flex;
+    flex-basis: 500px;
   }
   
   .menu-container ul {
@@ -35,4 +37,9 @@
     font-size: 1.3rem;
     list-style: none;
     margin-right: 10px;
+  }
+
+  .header-container nav {
+      display: flex;
+      order: 1;
   }
