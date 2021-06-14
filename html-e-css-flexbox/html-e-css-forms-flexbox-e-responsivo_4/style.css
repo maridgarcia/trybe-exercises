@@ -23,6 +23,8 @@
   .menu-container {
     display: flex;
     flex-basis: 500px;
+    order: 1;
+    flex-grow: 1;
   }
   
   .menu-container ul {
@@ -39,7 +41,4 @@
     margin-right: 10px;
   }
 
-  .header-container nav {
-      display: flex;
-      order: 1;
-  }
+
