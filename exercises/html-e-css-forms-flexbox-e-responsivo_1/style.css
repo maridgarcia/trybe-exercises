@@ -1,0 +1,29 @@
+body {
+  background-color: lightgrey;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type = text], input[type = email] {
+  border-radius: 4px;
+  padding: 2px;
+  width: 100%;
+}
+
+.style-fieldset {
+  background-color:white;
+  padding: 20px;
+  margin: 20px;
+  width: auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+legend {
+  font-weight: bolder;
+}
+
+input[type = date] {
+  margin: 5px;
+}

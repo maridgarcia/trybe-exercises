@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cadastre seu Currículo</h1>
+    </header>
+    <form action="">
+  <fieldset class = "style-fieldset">
+  <legend>Informações Pessoais</legend>
+    <label for="">Nome
+        <input type="text" maxlength="40" required>
+    </label>
+    <br>
+    <br>
+    <label for="">E-mail
+        <input type="email" maxlength="50" required>
+    </label>
+    <br>
+    <br>
+    <label for="">CPF
+        <input type="text" maxlength="11" required>
+    </label>
+    <br>
+    <br>
+    <label for="">Endereço
+        <input type="text" maxlength="200" required>
+    </label>
+    <br>
+    <br>
+    <label for="">Cidade
+        <input type="text" maxlength="28" required>
+    </label>
+    <br>
+    <br>
+    <label for="">Estado</label>    
+        <select name="" id="estados">
+            <option disable selected value>Selecione seu estado</option>
+        </select>
+    <br>
+    <br>
+    <label for="tipo-de-moradia">Moradia
+        <input type="radio" id='moradia' name = 'tipo-de-moradia' required>Casa
+        <input type="radio" id='moradia' name = 'tipo-de-moradia' required>Apartamento
+    </label>
+  </fieldset>
+
+  <fieldset class = "style-fieldset">
+      <legend>Resumo do Currículo</legend>
+      <p> <em>Escreva um resumo da sua carreira profissional:</em></p>
+      <textarea name="resumo-curriculo" id="resumo-curriculo" cols="30" rows="5" maxlength="1000" required></textarea>
+      <br>
+      <label for=""> Cargo
+          <input type="text" maxlength="40" required>
+      </label>
+      <br>
+      <label for="">Descrição do cargo:
+          <input type="text" maxlength="500" required>
+      </label>
+      <br>
+      <label for="">Data de início:
+          <input type="date" name="" id="">
+      </label>
+  </fieldset>
+</form>
+    <script src="script.js"></script>
+</body>
+</html>
