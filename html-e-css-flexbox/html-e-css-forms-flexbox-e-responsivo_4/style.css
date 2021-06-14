@@ -18,6 +18,7 @@
     display: flex;
     justify-content: center;
     flex-basis: 268px;
+    align-self: center;
   }
   
   .menu-container {
@@ -31,6 +32,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+    align-self: center;
   }
   
   .menu-container li {
