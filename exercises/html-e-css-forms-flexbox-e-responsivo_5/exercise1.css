@@ -1,17 +1,42 @@
 body {
-
+  font-size: 16px;
+  margin: 10px auto 5px auto;
 }
 h1 {
-
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
 }
 h2 {
-
+  font-size: 18px;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 figure {
-    margin: 0;
+  margin: 50px;
+}
+
+/*/ Para telas pequenas /*/
+@media screen and (max-width: 500px) {
+  h1 {
+   background-color: yellow;
+   display: flex;
+   justify-content: center;
+ }
+  h2 {
+    background-color: yellow;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: x-large;
+  }
 }
