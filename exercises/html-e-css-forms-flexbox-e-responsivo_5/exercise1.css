@@ -6,37 +6,57 @@ h1 {
   font-size: 24px;
   display: flex;
   justify-content: center;
-  background-color: yellow;
+  background-color: grey;
+  color: white;
 }
 h2 {
   font-size: 18px;
-  background-color: yellow;
+  background-color: grey;
+  color: white;
   display: flex;
   justify-content: center;
+
 }
 
 img {
   max-width: 100%;
+  border-radius: 6px;
 }
 
 figure {
-  margin: 50px;
+  background: black;
+  color: white;
+  margin: 0 0 25px 0;
+  padding: 10px;
+  text-align: center;
 }
 
 /*/ Para telas pequenas /*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
+  body {
+    background-color: grey;
+    color: white
+  }
   h1 {
-   background-color: yellow;
+   background-color: rgb(100, 128, 128);
    display: flex;
    justify-content: center;
  }
   h2 {
-    background-color: yellow;
+    background-color: rgb(100, 128, 128); 
     font-size: 20px;
     text-align: center;
   }
 
   p {
     font-size: x-large;
+  }
+
+  figure {
+   width: 30%;
+   float: left;
+   background-color: black;
+   margin: 0px 5px 10px 5px;
+
   }
 }
