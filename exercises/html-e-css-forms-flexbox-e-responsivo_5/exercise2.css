@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /*/ Para telas pequenas /*/
+  @media screen and (max-width: 400px) {
+      body {
+          background-color: teal;
+      }
+
+      header p {
+        font-size: xx-large;
+        text-align: center;
+      }
+
+      nav ul li {
+          display: inline;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+      }
+
+      p {
+        font-size: x-large;
+      }
+  }
+
+  /*/ Para telas médias /*/
+
+  /*/ Para telas grandes /*/
