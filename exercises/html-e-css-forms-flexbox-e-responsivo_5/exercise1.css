@@ -1,18 +1,15 @@
 body {
-  font-size: 16px;
+  font-size: 18px;
   margin: 10px auto 5px auto;
 }
+
 h1 {
   font-size: 24px;
-  display: flex;
-  justify-content: center;
   background-color: grey;
-  color: white;
+
 }
 h2 {
   font-size: 18px;
-  background-color: grey;
-  color: white;
   display: flex;
   justify-content: center;
 
@@ -31,11 +28,27 @@ figure {
   text-align: center;
 }
 
+/*/ Para telas grandes /*/
+@media screen and (min-width: 500px) {
+  h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+ }
+  h2 {
+    background-color: grey;
+    color: white;
+  }
+  
+}
+
+
+
 /*/ Para telas pequenas /*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   body {
     background-color: grey;
-    color: white
+    color: white;
   }
   h1 {
    background-color: rgb(100, 128, 128);
