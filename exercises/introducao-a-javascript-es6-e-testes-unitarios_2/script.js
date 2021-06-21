@@ -87,3 +87,7 @@ const order = {
 // Crie uma função para mostrar o tamanho de um objeto.
 const length = (obj) => Object.keys(obj).length;
 console.log(length(lesson1));
+
+// Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
+const value = (val) => Object.values(val);
+console.log(value(lesson1));
