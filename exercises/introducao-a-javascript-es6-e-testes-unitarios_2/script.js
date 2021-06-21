@@ -83,3 +83,7 @@ const order = {
   const keys = (obj) => Object.keys(obj);
 
   console.log(keys(lesson1));
+
+// Crie uma função para mostrar o tamanho de um objeto.
+const length = (obj) => Object.keys(obj).length;
+console.log(length(lesson1));
