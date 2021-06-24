@@ -1,0 +1,75 @@
+body {
+  font-size: 18px;
+  margin: 10px auto 5px auto;
+}
+
+h1 {
+  font-size: 24px;
+  background-color: grey;
+
+}
+h2 {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+figure {
+  background: black;
+  color: white;
+  margin: 0 0 25px 0;
+  padding: 10px;
+  text-align: center;
+}
+
+/*/ Para telas grandes /*/
+@media screen and (min-width: 500px) {
+  h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+ }
+  h2 {
+    background-color: grey;
+    color: white;
+  }
+  
+}
+
+
+
+/*/ Para telas pequenas /*/
+@media screen and (max-width: 500px) {
+  body {
+    background-color: grey;
+    color: white;
+  }
+  h1 {
+   background-color: rgb(100, 128, 128);
+   display: flex;
+   justify-content: center;
+ }
+  h2 {
+    background-color: rgb(100, 128, 128); 
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: x-large;
+  }
+
+  figure {
+   width: 30%;
+   float: left;
+   background-color: black;
+   margin: 0px 5px 10px 5px;
+
+  }
+}

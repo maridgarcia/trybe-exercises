@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /*/ Para telas pequenas /*/
+  @media screen and (max-width: 400px) {
+      body {
+          background-color: black;
+          color: white;
+      }
+
+      header p {
+        font-size: xx-large;
+        text-align: center;
+      }
+
+      h1 {
+        padding: 10px;
+      }
+
+      nav ul li {
+          display: inline;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+      }
+      h2 {
+        font-size: xx-large;
+        margin: 10px;
+      }
+
+      p {
+        font-size: x-large;
+        margin: 10px 10px;
+      }
+
+      footer h3 {
+        background-color: white;
+        color: black;
+        display: flex;
+        justify-content: center;
+        padding: 3px;
+      }
+
+      footer p {
+        font-size: 15px;
+      }
+  }
+
+  /*/ Para telas médias /*/
+
+  /*/ Para telas grandes /*/
