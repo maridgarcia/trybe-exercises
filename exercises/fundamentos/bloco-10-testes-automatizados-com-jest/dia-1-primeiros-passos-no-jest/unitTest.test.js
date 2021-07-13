@@ -13,4 +13,9 @@ describe('test if the function sum', () => {
       sum(4, "5");
     }).toThrow()
 });
+test('message when a string is passed', () => {
+  expect(() => {
+    sum(4, "5");
+  }).toThrow('parameters must be numbers')
+});
 })
