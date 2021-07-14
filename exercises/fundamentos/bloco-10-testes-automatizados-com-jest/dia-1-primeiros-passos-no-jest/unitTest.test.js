@@ -23,10 +23,13 @@ test('message when a string is passed', () => {
 })
 
 // Testes para a função "myRemove":
-// Verifique se a chamada myRemove([1, 2, 3, 4], 3) retorna o array esperado
 describe('test if function myRemove', () => {
-  const numberArray = [1, 2, 3, 4];
   test('if function removes the parameter item', () => {
+    const numberArray = [1, 2, 3, 4];
     expect([1, 2, 4]).toEqual(myRemove(numberArray, 3));
+  })
+  test('myRemove([1, 2, 3, 4], 3) dont return [1, 2, 3, 4]', () => {
+    const numberArray = [1, 2, 3, 4];
+    expect([1, 2, 3, 4]).not.toBe(myRemove(numberArray, 3));
   })
 })
