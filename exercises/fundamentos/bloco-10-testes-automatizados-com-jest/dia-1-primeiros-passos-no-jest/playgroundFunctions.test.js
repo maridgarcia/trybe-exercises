@@ -11,11 +11,19 @@ describe('encode and decode are functions', () => {
     expect(typeof decode).toBeDefined();
   });
 // Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente;
-  test('if encode coverts a, e, i, o, u to 1, 2, 3, 4 and 5 respectively', () => {
+  test('if encode converts a, e, i, o and u to 1, 2, 3, 4 and 5 respectively', () => {
     expect(encode('car')).toEqual('c1r');
     expect(encode('bed')).toEqual('b2d');
     expect(encode('pit')).toEqual('p3t');
     expect(encode('cow')).toEqual('c4w');
     expect(encode('sun')).toEqual('s5n');
+  });
+// Para a função decode teste se os números 1, 2, 3, 4 e 5 são convertido nas vogais a, e, i, o, u , respectivamente;
+test('if encode converts 1, 2, 3, 4 and 5 to a, e, i, o and u respectively', () => {
+    expect(decode('c1r')).toEqual('car');
+    expect(decode('b2d')).toEqual('bed');
+    expect(decode('p3t')).toEqual('pit');
+    expect(decode('c4w')).toEqual('cow');
+    expect(decode('s5n')).toEqual('sun');
   });
 })
