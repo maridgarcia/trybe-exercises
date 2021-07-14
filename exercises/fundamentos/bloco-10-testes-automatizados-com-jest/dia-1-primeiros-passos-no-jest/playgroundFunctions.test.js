@@ -26,4 +26,11 @@ test('if encode converts 1, 2, 3, 4 and 5 to a, e, i, o and u respectively', () 
     expect(decode('c4w')).toEqual('cow');
     expect(decode('s5n')).toEqual('sun');
   });
+// Teste se a string que é retornada pelas funções têm o mesmo número de caracteres que a string passada como parâmetro.
+  test('string returned has the same length as the parameter', () => {
+    expect(encode('car')).toHaveLength(3);
+    expect(decode('car')).toHaveLength(3);
+  });
 })
+
+
