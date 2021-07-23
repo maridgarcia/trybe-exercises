@@ -1,0 +1,12 @@
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: xx-small;
+}
+
+#center-content {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: auto;
+  width: auto;
+  height: 200px;
+}
