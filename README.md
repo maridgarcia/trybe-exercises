@@ -1,1 +1,2 @@
-A Trybe é uma escola de programação, onde as pessoas estudantes aprendem a desenvolver e aprendem a aprender. Estou no Bloco 8, aprendendo sobre Higher Order Functions, e seus conceitos. Futuramente, aprenderei sobre Front-end, Back-end e Ciência da Computação!. #GoTryber.
+A Trybe é uma escola de programação, onde as pessoas estudantes aprendem a desenvolver e aprendem a aprender. Esse é o meu repositório de exercícios 📓 📝
+#GoTryber.
